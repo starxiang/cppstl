@@ -1,2 +1,9 @@
-# cppstl
-cpp stl codes
+# cpp 标准库学习
+
+## 通用容器
+通用容器的说明；通用容易一共有 种
+分别为：
+- vector
+- list
+- deque
+......
