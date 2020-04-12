@@ -16,11 +16,12 @@ int main()
     cout<<"Input Order:";
     copy(a,a+10,ostream_iterator<int>(cout, "\t"));
     cout<<endl;
-
+    
     cout<<"Output Order";
     while(!pr.empty())
     {
         cout<<pr.top()<<"\t";
         pr.pop();
     }
+    
 }

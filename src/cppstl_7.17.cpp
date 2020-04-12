@@ -19,7 +19,7 @@ void PrintQueue(queue<T, Container> obj)
 int main()
 {
     string str="a";
-    queue<string, deque<string>> t;
+    queue<string, deque<string> > t;
     for (int i = 0; i < 4; i++)
     {
         t.push(str);
@@ -29,7 +29,7 @@ int main()
     PrintQueue(t);
     cout<<endl;
 
-    queue<float, list<float>> u;
+    queue<float, list<float> > u;
     for (int i = 0; i < 4; i++)
     {
         u.push(i+1);

@@ -4,7 +4,7 @@
 
 using namespace std;
 
-template<class T, class Container=deque<T>>
+template<class T, class Container=deque<T> >
 class mystack:public stack<T, Container>
 {
 private:
@@ -15,7 +15,7 @@ public:
 
     void push(const T &t)
     {
-        if(size() < m_nMaxSize)
+        if(stack<T, Container>::size() < m_nMaxSize)
         {
             stack<T, Container>::push(t);
         }
@@ -29,7 +29,7 @@ public:
 
 int main()
 {
-    mystack<int, deque<int>> obj(2);
+    mystack<int, deque<int> > obj(2);
     obj.push(1);
     obj.push(2);
     obj.push(3);

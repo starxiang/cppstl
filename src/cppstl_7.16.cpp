@@ -11,7 +11,8 @@
 
 using namespace std;
 
-void PrintStack(stack<int, vector<int>> obj)
+/*
+void PrintStack(stack<int, vector<int> > obj)
 {
     while(!obj.empty())
     {
@@ -20,7 +21,7 @@ void PrintStack(stack<int, vector<int>> obj)
     }
 }
 
-void PrintStack(stack<string, list<string>> obj)
+void PrintStack(stack<string, list<string> > obj)
 {
     while(!obj.empty())
     {
@@ -28,6 +29,7 @@ void PrintStack(stack<string, list<string>> obj)
         obj.pop();
     }
 }
+*/
 
 template<class T, class Container>
 void PrintStack(stack<T, Container> obj)
@@ -41,7 +43,7 @@ void PrintStack(stack<T, Container> obj)
 
 int main()
 {
-    stack<int, vector<int>> s;
+    stack<int, vector<int> > s;
     for (int i = 0; i < 4; i++)
     {   
         s.push(i+1);
@@ -49,8 +51,17 @@ int main()
     PrintStack(s);
     cout<<endl;
 
-    string str="s";
-    stack<float, deque<float>> u;
+    string str="a";
+    stack<string, list<string> > t;
+    for(int i=0;i<4;i++)
+    {
+        t.push(str);
+        str+="a";
+    }
+    PrintStack(t);
+    cout<<endl;
+
+    stack<float, deque<float> > u;
     for (int i = 0; i < 4; i++)
     {
         u.push(i+1);
