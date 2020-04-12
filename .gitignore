@@ -1,0 +1,15 @@
+#Ignore all
+*
+
+#Add specified folders
+!/src/
+
+#Add specified code files
+!*.cpp
+!*.c
+!*.h
+!makefile
+!*.gitignore
+ 
+#Other files                                                                                                                                                  
+!README.md
